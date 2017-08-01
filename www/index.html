@@ -1,0 +1,44 @@
+<!--
+ ______      ______     ______   
+|_   _ \   .' ___  |  .' ___  |  
+  | |_) | / .'   \_| / .'   \_|  
+  |  __'. | |   ____ | |   ____  
+ _| |__) |\ `.___]  |\ `.___]  | 
+|_______/  `._____.'  `._____.' 
+
+Contact: blackclown0@gmail.com
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/custom.style.css">
+    </head>
+    <body> 
+        <span id="loading"></span> 
+        <span id="game-version"></span> 
+        <div id="main-menu">
+            <h1 id="game-name"></h1>
+            <span id="game-credit"></span>
+              
+            <button onclick="GAME.prepareGame()" id="game-start-button"></button>
+        </div> 
+
+        <span id="highscore"></span>
+
+        <div id="changelog">
+            <span id="version"></span>
+            <ul id="changes"></ul>
+        </div>
+
+        <span id="creator"></span>
+        <canvas id="game-canvas"></canvas>
+        <canvas id="effect-canvas"></canvas>
+
+        <script src="cordova.js"></script> 
+        <script src="js/loader.js" id="game-loader"></script>
+    </body>
+</html>
